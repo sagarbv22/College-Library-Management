@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>College Library Management</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		body {
+			background-image: url('https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+			background-size: cover;
+			background-position: center;
+		}
+        .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+	}
+
+	h1 {
+		font-size: 4rem;
+		margin-bottom: 2rem;
+		color: #fff;
+        text-shadow: 2px 2px 0 #000;
+		
+		text-align: center;
+	}
+
+	.options {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 2rem;
+		padding: 1rem;
+		background-color: rgba(255, 255, 255, 0.8);
+		border-radius: 1rem;
+		box-shadow: 0px 0px 10px #ccc;
+		max-width: 800px;
+	}
+
+	.option {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 1rem;
+		padding: 1rem;
+		text-align: center;
+		background-color: #fff;
+		border-radius: 1rem;
+		box-shadow: 0px 0px 10px #ccc;
+		transition: transform 0.2s ease-in-out;
+		width: 300px;
+		height: 300px;
+		text-decoration: none;
+	}
+
+	.option:hover {
+		transform: scale(1.05);
+	}
+
+	.option-title {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: #333;
+	}
+
+	.option-description {
+		font-size: 1.2rem;
+		color: #666;
+		line-height: 1.5;
+	}
+
+	.option-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		color: #4CAF50;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>College Library Management</h1>
+		<div class="options">
+			<a href="./std-signup.html" class="option">
+				<div class="option-icon">
+					<i class="fas fa-user-graduate"></i>
+				</div>
+				<div class="option-title">
+					Student
+				</div>
+				<div class="option-description">
+					Register as a student to access the library resources.
+				</div>
+			</a>
+			<a href="./login.jsp" class="option">
+				<div class="option-icon">
+					<i class="fas fa-user-tie"></i>
+				</div>
+				<div class="option-title">
+					Staff
+				</div>
+				<div class="option-description">
+					Log in as staff to manage the library resources.
+
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
